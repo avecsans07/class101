@@ -3,7 +3,7 @@ on:
   push:
     paths:
       - 'src/**'
-  workflow_dispatch:
+      - '!src/**/*.md'
 
 jobs:
   build:
