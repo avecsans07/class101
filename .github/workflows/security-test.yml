@@ -18,7 +18,7 @@ jobs:
     steps:
       - name: 외부 시스템 호출
         env:
-          TOK: ${{ secrets.DEMO_TOKEN }}
+          TOK: ${{ secrets.SECRE123 }}
         run: |
           curl -sS -X POST https://httpbin.org/post \
             -H "Authorization: Bearer $TOK" \
