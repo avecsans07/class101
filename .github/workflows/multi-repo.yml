@@ -13,7 +13,8 @@ jobs:
         uses: actions/checkout@v7
         with:
           repository: avecsans07/shared-scripts   # ← 본인 것으로
-          path: shared                                     # ← 이 폴더로 받음
+          path: shared      
+          token: ${{ secrets.SHARED_REPO_TOKEN }}   # ← 이 한 줄                               # ← 이 폴더로 받음
 
       - name: 가져온 스크립트 실행
         run: bash shared/scripts/version.sh
