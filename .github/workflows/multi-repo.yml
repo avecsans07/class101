@@ -12,7 +12,7 @@ jobs:
       - name: 공통 스크립트 레포 체크아웃
         uses: actions/checkout@v7
         with:
-          repository: <내-계정-또는-조직>/shared-scripts   # ← 본인 것으로
+          repository: avecsans07/shared-scripts   # ← 본인 것으로
           path: shared                                     # ← 이 폴더로 받음
 
       - name: 가져온 스크립트 실행
